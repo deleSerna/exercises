@@ -3,7 +3,9 @@
 // Compile with  gcc SimpleBufferOverflow.c -fno-stack-protector
 // Then with Apple clang version 14.0.0 (clang-1400.0.29.202), if I pass
 // 1234567812345678 or any 16  alpha numeric characters as long as the 1st 8 charcters 
-// matches to the next 8, you could see that Access granted 
+// matches to the next 8, you could see that Access granted.
+
+// Adapted based on https://snyk.io/blog/buffer-overflow-attacks-in-c/
 
 int main()
 {
